@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fonts.css" />
+    <link rel="stylesheet" href="faq.css" />
+    <title>Document</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+
+        </script>
+    <script>
+        $(document).ready(function () {
+            var q = "#question";
+            var a = "#answer";
+            var p = "#path"
+            for (let i = 0; i < 8; i++) {
+                $(q + i).click(function () {
+
+
+                    $(a + i).toggleClass("dropdownn");
+                    $(a + i).toggleClass(" drop-down");
+                    $(a + i).toggleClass("mb-7");
+                    $(q + i).toggleClass(" change-color");
+                    $(p + i).attr('d', (_, attr) => attr == "M5.47 8.845a.75.75 0 011.06 0l5.47 5.47 5.47-5.47a.75.75 0 111.06 1.06l-6 6a.75.75 0 01-1.06 0l-6-6a.75.75 0 010-1.06z" ? "M11.47 8.095a.75.75 0 011.06 0l6 6a.75.75 0 11-1.06 1.06L12 9.685l-5.47 5.47a.75.75 0 01-1.06-1.06l6-6z" : "M5.47 8.845a.75.75 0 011.06 0l5.47 5.47 5.47-5.47a.75.75 0 111.06 1.06l-6 6a.75.75 0 01-1.06 0l-6-6a.75.75 0 010-1.06z")
+
+                });
+            }
+
+        });
+    </script>
+</head>
+
+<body>
+
+    <div class="container">
+        <div id="faq-container" class="my-10">
+
+
+            <div class="my-10">
+
+                <!-- FAQ heading -->
+
+                <h2 class="text-h2 text--center mb-9 ">Frequently asked questions</h2>
+                <div class="row no-gutters justify-content-center">
+
+                    <!-- FAQ sub head -->
+                    <div class="col-12 col-md-8">
+                        <p class="opacity--hinted text--bold mb-4">General</p>
+                    </div>
+
+                    <!-- FAQ bar-1 -->
+
+                    <div class="col-12 col-md-8">
+
+                        <!-- FAQ question-1 -->
+                        <div class="px-6 pt-5 mb-4 qbar" id="question0">
+
+                            <div class="d-flex flex-row align-items-center justify-content-between mb-5">
+                                <p class=" text--bold">What is MasterClass?</p>
+                                <svg width="2em" height="2em" viewBox="0 0 24 24" fill="none" class=" icon--3">
+                                    <path id="path0" fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M5.47 8.845a.75.75 0 011.06 0l5.47 5.47 5.47-5.47a.75.75 0 111.06 1.06l-6 6a.75.75 0 01-1.06 0l-6-6a.75.75 0 010-1.06z"
+                                        fill="currentColor">
+                                    </path>
+                                </svg>
+
+                            </div>
+
+                            <!-- FAQ answer-1 -->
+                            <div class="dropdownn " id="answer0">
+                                <p class=" opacity--hinted">MasterClass is the streaming platform that makes it
+                                    possible
+                                    for anyone to watch or listen to hundreds of video lessons taught by 100+ of the
+                                    world’s
+                                    best.</p>
+                                <br>
+                                <p class=" opacity--hinted">Whether it be in business and leadership, photography,
+                                    cooking, writing, acting, music, sports and more, MasterClass delivers a world class
+                                    online learning experience. Video lessons are available anytime, anywhere on your
+                                    smartphone, personal computer, Apple TV and FireTV streaming media players.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- FAQ bar-2 -->
+
+                    <div class="col-12 col-md-8 ">
+
+                        <!-- FAQ question-2 -->
+                        <div class="px-6 pt-5 mb-4 qbar" id="question1">
+
+                            <div class="d-flex flex-row align-items-center justify-content-between mb-5">
+                                <p class="text--bold">What is included in a MasterClass membership?</p>
+                                <svg width="2em" height="2em" viewBox="0 0 24 24" fill="none" class="icon--3">
+                                    <path id="path1" fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M5.47 8.845a.75.75 0 011.06 0l5.47 5.47 5.47-5.47a.75.75 0 111.06 1.06l-6 6a.75.75 0 01-1.06 0l-6-6a.75.75 0 010-1.06z"
+                                        fill="currentColor">
+                                    </path>
+                                </svg>
+                            </div>
+
+                            <!-- FAQ answer-2 -->
+                            <div class="dropdownn " id="answer1">
+                                <p class=" opacity--hinted">Membership includes access to an incredible catalog of
+                                    100+
+                                    classes taught by the world’s best on cooking, leadership, photography, writing and
+                                    more.</p>
+                                <br>
+                                <p class=" opacity--hinted">Each class includes around 20 video lessons that are 10
+                                    minutes long on average, along with an in-depth workbook. You also get access to our
+                                    smartphone and TV apps, offline lessons, our member’s only newsletter, and our
+                                    dynamic
+                                    community of members around the world.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- FAQ bar-3 -->
+
+                    <div class="col-12 col-md-8">
+
+                        <!-- FAQ question-3 -->
+                        <div class=" px-6  pt-5 mb-4 qbar" id="question2">
+
+                            <div class="d-flex flex-row align-items-center justify-content-between mb-5">
+                                <p class=" text--bold">Where can I watch?</p>
+                                <svg width="2em" height="2em" viewBox="0 0 24 24" fill="none" class=" icon--3">
+                                    <path id="path2" fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M5.47 8.845a.75.75 0 011.06 0l5.47 5.47 5.47-5.47a.75.75 0 111.06 1.06l-6 6a.75.75 0 01-1.06 0l-6-6a.75.75 0 010-1.06z"
+                                        fill="currentColor">
+                                    </path>
+                                </svg>
+                            </div>
+
+                            <!-- FAQ answer-3 -->
+                            <div class="dropdownn" id="answer2">
+                                <p class=" opacity--hinted">With MasterClass, you can learn and be inspired anytime,
+                                    anywhere, including your smartphone, personal computer, Apple TV, Amazon Fire TV,
+                                    and
+                                    Roku streaming media players. You can even download your favorite lessons and watch
+                                    on
+                                    the plane or listen during your commute in audio-only mode.*</p>
+                                <br>
+                                <span class="opacity--muted  text-x-small">*Downloads only on iOS and not available
+                                    for
+                                    all classes. Audio mode is not available for all classes.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- FAQ bar-4 -->
+
+                    <div class="col-12 col-md-8">
+
+                        <!-- FAQ question-4 -->
+                        <div class=" px-6  pt-5 mb-4 qbar" id="question3">
+
+                            <div class="d-flex flex-row align-items-center justify-content-between mb-5">
+                                <p class=" text--bold">Which classes are right for me?</p>
+                                <svg width="2em" height="2em" viewBox="0 0 24 24" fill="none" class=" icon--3">
+                                    <path id="path3" fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M5.47 8.845a.75.75 0 011.06 0l5.47 5.47 5.47-5.47a.75.75 0 111.06 1.06l-6 6a.75.75 0 01-1.06 0l-6-6a.75.75 0 010-1.06z"
+                                        fill="currentColor">
+                                    </path>
+                                </svg>
+                            </div>
+
+                            <!-- FAQ answer-4 -->
+                            <div class="dropdownn" id="answer3">
+                                <p class=" opacity--hinted">MasterClass offers 100+ classes across a variety of
+                                    categories, including business and leadership, photography, cooking, writing,
+                                    acting,
+                                    music, sports and more. Every class has been designed to be accessible for people
+                                    with
+                                    little to no experience and advanced students alike. With new classes launching
+                                    regulary, you can learn practical skills, ignite new passions, and get everyday
+                                    wisdom.
+                                </p>
+                                <br>
+                                <p class=" opacity--hinted">Check out our <a href="#instructor-roster"
+                                        class=" text--link">catalog</a> and watch a few class trailers!</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-12 col-md-8 mt-6">
+                        <p class=" opacity--hinted  text--bold mb-4">Pricing &amp; Payment</p>
+                    </div>
+
+                    <!-- FAQ bar-5 -->
+                    <div class="col-12 col-md-8">
+
+                        <!-- FAQ question-5 -->
+                        <div class=" px-6  pt-5 mb-4 qbar" id="question4">
+
+                            <div class="d-flex flex-row align-items-center justify-content-between mb-5">
+                                <p class=" text--bold">How much does MasterClass cost?</p>
+                                <svg width="2em" height="2em" viewBox="0 0 24 24" fill="none" class=" icon--3">
+                                    <path id="path4" fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M5.47 8.845a.75.75 0 011.06 0l5.47 5.47 5.47-5.47a.75.75 0 111.06 1.06l-6 6a.75.75 0 01-1.06 0l-6-6a.75.75 0 010-1.06z"
+                                        fill="currentColor">
+
+                                    </path>
+                                </svg>
+                            </div>
+
+                            <!-- FAQ answer-5 -->
+                            <div class="dropdownn " id="answer4">
+                                <p class=" opacity--hinted">The annual membership is ₹15,550 and provides unlimited
+                                    access
+                                    to all classes and new classes as they launch. All MasterClass memberships include
+                                    access to our mobile and TV apps, high-definition videos, and downloadable class
+                                    workbooks.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ bar-6 -->
+                    <div class="col-12 col-md-8">
+
+                        <!-- FAQ question-6 -->
+                        <div class=" px-6  pt-5 mb-4 qbar" id="question5">
+
+                            <div class="d-flex flex-row align-items-center justify-content-between mb-5">
+                                <p class=" text--bold">Will I be charged taxes?</p>
+                                <svg width="2em" height="2em" viewBox="0 0 24 24" fill="none" class=" icon--3">
+                                    <path id="path5" fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M5.47 8.845a.75.75 0 011.06 0l5.47 5.47 5.47-5.47a.75.75 0 111.06 1.06l-6 6a.75.75 0 01-1.06 0l-6-6a.75.75 0 010-1.06z"
+                                        fill="currentColor">
+
+                                    </path>
+                                </svg>
+                            </div>
+
+                            <!-- FAQ answer-6 -->
+                            <div class="dropdownn" id="answer5">
+                                <p class=" opacity--hinted">Depending on where you live, you may be charged taxes in
+                                    addition to your annual membership price. If tax applies, you will see it stated
+                                    separately on your emailed invoice. Tax rates are calculated based on your location
+                                    or
+                                    the billing information you provided at the time of purchase.</p>
+                                <br>
+                                <p class=" opacity--hinted">Should you have any additional questions about taxes you
+                                    were
+                                    charged, please view our Support Helpdesk article on taxes or contact us at <a
+                                        class=" text--link"
+                                        href="mailto:support@masterclass.com">support@masterclass.com</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ bar-7 -->
+                    <div class="col-12 col-md-8">
+
+                        <!-- FAQ question-7 -->
+                        <div class=" px-6  pt-5 mb-4 qbar" id="question6">
+
+                            <div class="d-flex flex-row align-items-center justify-content-between mb-5">
+                                <p class=" text--bold">How does the 30-day guarantee work?</p>
+                                <svg width="2em" height="2em" viewBox="0 0 24 24" fill="none" class=" icon--3">
+                                    <path id="path6" fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M5.47 8.845a.75.75 0 011.06 0l5.47 5.47 5.47-5.47a.75.75 0 111.06 1.06l-6 6a.75.75 0 01-1.06 0l-6-6a.75.75 0 010-1.06z"
+                                        fill="currentColor"></path>
+                                </svg>
+                            </div>
+
+                            <!-- FAQ answer-7 -->
+                            <div class="dropdownn " id="answer6">
+                                <p class=" opacity--hinted">Our goal is to make sure that you have the best learning
+                                    experience possible. If MasterClass isn’t for you, then <a class=" text--link"
+                                        href="mailto:support@masterclass.com">email us</a> within 30 days of the date
+                                    you
+                                    purchase your subscription, and we’ll offer a full refund.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ bar-8 -->
+                    <div class="col-12 col-md-8">
+
+                        <!-- FAQ question-8 -->
+                        <div class=" px-6  pt-5 mb-4 qbar" id="question7">
+
+                            <div class="d-flex flex-row align-items-center justify-content-between mb-5">
+                                <p class=" text--bold">How do I cancel?</p>
+                                <svg width="2em" height="2em" viewBox="0 0 24 24" fill="none" class=" icon--3">
+                                    <path id="path7" fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M5.47 8.845a.75.75 0 011.06 0l5.47 5.47 5.47-5.47a.75.75 0 111.06 1.06l-6 6a.75.75 0 01-1.06 0l-6-6a.75.75 0 010-1.06z"
+                                        fill="currentColor">
+
+                                    </path>
+                                </svg>
+                            </div>
+
+                            <!-- FAQ answer-8 -->
+                            <div class="dropdownn " id="answer7">
+                                <p class=" opacity--hinted">If you don’t want to continue, you can cancel your
+                                    membership
+                                    renewal through your account page. Follow the prompts to cancel on the Settings
+                                    page,
+                                    and your membership will not renew. Please note that there aren’t refunds for
+                                    partially
+                                    unused membership periods.</p>
+                                <br>
+                                <p class=" opacity--hinted">If you have more questions, please <a
+                                        href="mailto:support@masterclass.com" class=" text--link">contact us</a>.
+                                    We’re
+                                    happy to help!</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+    </div>
+</body>
+
+</html>
