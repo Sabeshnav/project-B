@@ -1,0 +1,55 @@
+.mc-badge{
+    height:21px;
+    font-size:14px;
+    box-shadow:inset 0 0 0 1px #31333b
+}
+.mc-badge.mc-text-x-small{
+    line-height:1.4
+}
+.mc-carousel__arrow{
+    background:none;
+    z-index:1
+}
+._2ZCg7Pp3Ke78LE9qWllU6B .mc-carousel__arrow:not(.slick-disabled):hover{
+    background:none !important
+}
+._2ZCg7Pp3Ke78LE9qWllU6B .mc-carousel__arrow--prev{
+    padding-right:var(--mc-scale-9)
+}
+._2ZCg7Pp3Ke78LE9qWllU6B .mc-carousel__arrow--next{
+    padding-left:var(--mc-scale-9)
+}
+
+._3Xkk1e_wgT3LNmLLOx6uGH{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+    background-color:#191c21;
+    overflow:hidden;
+    height:100%
+}
+._1w4262KQSaH570kQItuABU{
+    position:absolute;
+    width:100%;
+    -o-object-fit:cover;
+    object-fit:cover
+}
+
+._35JdWCkK2n-KEwKUa8vWSd{
+    position:relative;
+    border-radius:4px;
+    overflow:hidden
+}
+._35JdWCkK2n-KEwKUa8vWSd .kk0mqi88YHLO8QOhNdi61{
+    z-index:1;
+    position:absolute;
+    top:var(--mc-scale-4);
+    left:var(--mc-scale-4)
+}
+.E8L6G3FjaOVKAjLRs9WOp{
+    background:linear-gradient(180deg, rgba(25, 28, 33, 0) 55.21%, rgba(25, 28, 33, 0.6) 74.48%, #191c21 100%)
+}
+
+
+  
